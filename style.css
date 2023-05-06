@@ -29,7 +29,7 @@
     background-attachment: fixed;
     
     
-    height: 100vh;
+    max-height: 100vh;
     padding:0;
     margin:0;
 }
@@ -109,27 +109,31 @@
   width: 50px;
   height: 50px;
   display: inline;
+  opacity: 1;
 }
 .photo {
   width: 350px;
-  height: 300px;
+  height: 270px;
   overflow: hidden;
   border-radius: 20px; 
   box-shadow: 0 0 5px;
+  opacity: 1;
 }
 img.krug {
   transition: transform 0.25s;
   border-radius: 20px; 
   box-shadow: 0 0 5px;
+  opacity: 1;
 }
 .photo:hover img {
   transform: scale(1.1);
   border-radius: 20px; 
   box-shadow: 0 0 5px;
+  opacity: 1;
 }
 .slider {
   border-radius: 30px;
-  height: 300px;
+  height: 270px;
   width: 450px;
   position: relative;
   bottom: 350px;
@@ -140,7 +144,8 @@ img.krug {
   border-width: 2px;
   border-style: solid;
   transition: 0.5s;
-  background-color:rgb(255, 60, 0);
+  background-color: black;
+  opacity: .9;
   z-index: 6;
 }
 
@@ -148,13 +153,14 @@ img.krug {
   border-color: white;
   border-width: 2px;
   border-style: solid;
-  background-color:rgb(255, 60, 0);
+  background-color:black;
   transition: 0.5s;
   z-index: 6;
+  opacity: .9;
 }
 
 .item {
-
+  opacity: 1;
   display: flex;
   justify-content: space-evenly;
   height: 100%;
@@ -166,6 +172,7 @@ img.krug {
   align-self: center;
   text-align: center;
   z-index: 6;
+  opacity: 1;
 }
 
 
@@ -180,6 +187,7 @@ img.krug {
   position: relative;
   top: 50px;
   z-index: 6;
+  opacity: 1;
 }
 
 .previous, .next {
@@ -188,24 +196,28 @@ img.krug {
   transition: 0.5s;
   z-index: 6;
   text-decoration: none;
+  opacity: 1;
 }
 
 .arrow_mobile {
   display: none;
   text-decoration: none;
   z-index: 6;
+  opacity: 1;
 }
 
 .previous:hover, .next:hover {
   background-color: rgba(0, 0, 0, 0.2);
   padding: 5px;
   z-index: 6;
+  opacity: 1;
 }
 
 .slider .item {
   animation-name: fade;
   animation-duration: 1.5s;
   z-index: 6;
+  opacity: 1;
 }
 
 @keyframes fade {
@@ -222,12 +234,14 @@ img.krug {
   .item {
       flex-direction: column;
       z-index: 6;
+      opacity: 1;
   }
 
   .slider {
       margin: 0;
       padding: auto;
       z-index: 6;
+      opacity: 1;
   }
 
   .slider .item img {
@@ -235,17 +249,20 @@ img.krug {
       height: 80%;
       padding: 10px;
       z-index: 6;
+      opacity: 1;
   }
 
   .previous, .next {
       display: none;
       z-index: 6;
+      opacity: 1;
   }
 
   .arrow_mobile {
       display: flex;
       justify-content: space-around;
       z-index: 6;
+      opacity: 1;
   }
 
   .previous_mobile, .next_mobile {
@@ -254,17 +271,33 @@ img.krug {
       transition: 0.5s;
       color: white;
       z-index: 6;
+      opacity: 1;
   }
 }
 .uc {
   font-size: 24px;
+  font-family: "Montserrat"
 }
 .pc{
   font-size: 20px;
+  font-family: "Montserrat"
 }
 .Name{
   font-size: 30px;
+  font-family: "Montserrat"
 }
 .Role{
   font-size: 28px;
+  font-family: "Montserrat"
+}
+.a{
+  transition: 0.8s;
+  width: 130px;
+  height: 50px;
+  text-align: center;
+  vertical-align: center;
+
+}
+.a:hover{
+  background-color: rgb(255, 60, 0);
 }
