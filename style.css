@@ -301,3 +301,46 @@ img.krug {
 .a:hover{
   background-color: rgb(255, 60, 0);
 }
+.ElGid{
+  font-family: 'Montserrat'; 
+  font-size: 85px; color: white
+}
+.ElGid1{
+  position: relative;
+  width: 100px;
+  height: 200px;
+  z-index: 5;
+  bottom: 500px;
+  left: 18%;
+  margin: 0px;
+}
+@media screen and (max-width: 700px)
+{
+  .ElGid{
+    font-family: 'Montserrat'; 
+    font-size: 60px; 
+    color: white;
+  }
+  .ElGid1{
+    bottom: 460px;
+    z-index: 33;
+  }
+  .video-container{
+    background-size: cover;
+  }
+  .VK1{
+    left: 10%
+  }
+  .mail1{
+    left: 40%
+  }
+  .telegram1{
+    left: 70%
+  }
+  .Adress{
+    font-size: 18px;
+  }
+  .Adress1{
+    left: 55%
+  }
+}
