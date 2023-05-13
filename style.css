@@ -314,7 +314,7 @@ img.krug {
   left: 18%;
   margin: 0px;
 }
-@media screen and (max-width: 700px)
+@media screen and (max-width: 700px) and (min-width: 551px)
 {
   .ElGid{
     font-family: 'Montserrat'; 
@@ -328,19 +328,184 @@ img.krug {
   .video-container{
     background-size: cover;
   }
-  .VK1{
-    left: 10%
-  }
-  .mail1{
-    left: 40%
-  }
-  .telegram1{
-    left: 70%
-  }
   .Adress{
-    font-size: 18px;
+    font-size: 18px !important
   }
   .Adress1{
-    left: 55%
+    left: 55% !important
   }
+  .Info{
+    font-size: 20px;
+  }
+
 }
+@media screen and (max-width: 550px){
+  .Adress{
+    position: absolute;
+    right: 20%;
+    font-size: 12px !important;
+    bottom: 100px;
+  }
+  .Adress1{
+    position: relative;
+    bottom: 50%;
+  }
+  .ElGid{
+    font-family: 'Montserrat'; 
+    font-size: 40px; 
+    color: white;
+  }
+  .ElGid1{
+    bottom: 550px;
+    z-index: 33;
+  }
+  .VK1{
+    bottom: 125px !important;
+    width: 30px;
+    height: 30px;
+  }
+  .mail1{
+    bottom: 175px !important;
+    width: 30px;
+    height: 30px;
+    position: relative;
+  }
+  .telegram1{
+    position: relative;
+    bottom: 223px !important;
+    width: 30px;
+    height: 30px;
+    right: 50px !important
+  }
+  .VK2{
+    bottom: 125px !important;
+    width: 30px !important;
+    height: 30px !important
+  }
+  .mail2{
+    bottom: 150px !important;
+    width: 30px !important;
+    height: 30px !important
+  }
+  .telegram2{
+    bottom: 30px !important;
+    width: 30px !important;
+    height: 30px !important
+  }
+  .Line1{
+    display:none;
+  }
+  .Line2{
+    display:none;
+  }
+ .Line3{
+  display: block !important
+ }
+ .Line4{
+  display: block !important
+ }
+ .Info{
+  font-size: 20px !important
+ }
+ .Info2{
+  font-size: 17px !important;
+ }
+ .Most{
+  position: relative;
+  width: 65% !important;
+  height: 20% !important;
+  left: 18% !important;
+  top: 150px !important
+ }
+ .WeKn{
+  left: 3% !important;
+  top:180px !important;
+  font-size: 15px !important;
+  width: 95% !important
+ }
+ .btn{
+  text-align: center;
+  top: 23%;
+  left: 35% !important;
+ }
+}
+@media screen and (max-width: 900px) and (min-width: 550px){
+  .Most{
+    position: relative;
+    width: 50% !important;
+    height: 25% !important;
+    left: 25% !important;
+    top: 150px !important
+   }
+   .WeKn{
+    left: 3% !important;
+    top:180px !important;
+    font-size: 15px !important;
+    width: 95% !important
+   }
+   .btn{
+    text-align: center;
+    top: 23%;
+    left: 40% !important;
+}
+}
+.Line1{
+  z-index: 5; position: relative; bottom: 500px; opacity: 1; left: 13%;
+}
+.VK2{
+  width: 50px; padding: 0; margin: 0; height: 50px;
+}
+.mail2{
+  width: 50px; padding: 0; margin: 0; height: 50px;
+}
+.telegram2{
+  width: 50px; padding: 0; margin: 0; height: 50px;
+}
+.VK1{
+  position: relative; left: 15%; width: 50px; padding: 0; margin: 0; height: 50px;
+}
+.mail1{
+  position: relative; left: 45%; bottom: 50px; width: 50px; padding: 0; margin: 0; height: 50px;
+}
+.telegram1{
+  position: relative; left: 75%; bottom: 100px; width: 50px; padding: 0; margin: 0; height: 50px;
+}
+.Line2{
+  z-index: 5; position: relative; bottom: 600px; opacity: 1; left: 13%;
+}
+.Line3{
+  display: none;
+  z-index: 5; position: relative; bottom: 700px; opacity: 1; left: 13%;
+}
+.Line4{
+  display: none;
+  z-index: 5; position: relative; bottom: 660px; opacity: 1; left: 13%;
+}
+.Perv{
+  list-style-type: none; bottom: 600px; position: relative;
+}
+.Adress1{
+  position: relative; bottom: 650px; width: 400px; left: 60%
+}
+.Adress{
+font-family: Montserrat; font-size: 24px; color: white; width: 350px; margin: 0 ; padding: 0; position: absolute
+}
+.InfoUp{
+  background-color: white; width: 100%; height: 900px; position: relative; z-index: 5; bottom: 500px; justify-content: center;
+}
+.Info{
+  text-align: center; top: 100px; position: relative; font-family: 'Montserrat'; font-size: 30px;
+}
+.Info2{ 
+  text-align: center; font-size: 24px; top: 100px; position: relative; font-family: 'Montserrat'
+}
+.Most{
+  width: 35%; height: 30%; border-radius: 20px; box-shadow: 0 0 5px 2px; position: relative; top: 20%; left: 12%;
+}
+.WeKn{
+  width: 45%;position: relative; top: -9%; left: 50%; font-size: 18px; font-family: 'Montserrat'; text-align: center;
+}
+.btn{
+  border-radius: 20px; position: relative; left: 62%; width: 150px; font-family: 'Montserrat';
+}
+  /*.wrapper{position:relative; max-width:100wv; overflow:hidden;}
