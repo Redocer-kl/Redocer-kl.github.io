@@ -1,0 +1,1059 @@
+
+.video-container {
+    background-attachment:fixed;
+    bottom: 80px;
+    z-index: -1;
+    height: 110vh;
+    position: relative;
+    overflow: hidden;
+    @media(min-width: 600px) {
+      height: 100vh;
+    }
+  }
+  
+  video {
+    object-fit: cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+  * {
+    box-sizing: border-box;
+  }
+  
+  body{
+    background-image: url("0001-0240.gif");
+    background-size: cover;
+    background-attachment: fixed;
+    
+    
+    max-height: 100vh;
+    padding:0;
+    margin:0;
+}
+  
+  .video-container:after {
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(black, .2);
+    z-index: 1;
+  }
+  
+  h1 {
+    text-transform: uppercase;
+    font-weight: 900;
+    margin: 0 0 1rem;
+    padding: 0;
+    line-height: 1;
+    font-family: Futura, Helvetica, sans-serif;
+    font-size: 5vw;
+    @media (max-width: 400px) {
+      font-size: 22px;
+    }
+    @media (min-width: 1200px) {
+      font-size: 75px;
+    }
+  }
+  
+  .callout {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    text-align: center;
+    position: relative;
+    z-index: 10;
+  }
+  
+  .support {
+    position: fixed;
+    bottom: 60px;
+    right: 20px;
+    text-transform: uppercase;
+    font-size: 9px;
+    letter-spacing: 1px;
+    text-align: right;
+    position: relative;
+    z-index: 10;
+    a {
+      color: white;
+      text-decoration: none;
+      position: relative;
+      display: inline-block;
+      margin-top: 10px;
+      &:before {
+        display: block;
+        position: absolute;
+        content: '';
+        bottom: -2px;
+        width: 0;
+        height: 1px;
+        background-color: rgba(white, .3);
+        transition: .3s;
+      }
+      &:hover:before {
+        width: 100%;
+      }
+    }
+  }
+.Soc{
+  width: 50px;
+  height: 50px;
+  display: inline;
+  opacity: 1;
+}
+.photo {
+  width: 350px;
+  height: 270px;
+  overflow: hidden;
+  border-radius: 20px; 
+  box-shadow: 0 0 5px;
+  opacity: 1;
+}
+img.krug {
+  transition: transform 0.25s;
+  border-radius: 20px; 
+  box-shadow: 0 0 5px;
+  opacity: 1;
+}
+.photo:hover img {
+  transform: scale(1.1);
+  border-radius: 20px; 
+  box-shadow: 0 0 5px;
+  opacity: 1;
+}
+.slider {
+  border-radius: 30px;
+  height: 270px;
+  width: 450px;
+  position: relative;
+  bottom: 350px;
+  left: 120px;
+  margin: 300px;
+  padding: 50px;
+  border-color: white;
+  border-width: 2px;
+  border-style: solid;
+  transition: 0.5s;
+  background-color: black;
+  opacity: .9;
+  z-index: 6;
+}
+
+.slider:hover {
+  border-color: white;
+  border-width: 2px;
+  border-style: solid;
+  background-color:black;
+  transition: 0.5s;
+  z-index: 6;
+  opacity: .9;
+}
+
+.item {
+  opacity: 1;
+  display: flex;
+  justify-content: space-evenly;
+  height: 100%;
+  color: white;
+  z-index:6;
+}
+
+.item_col {
+  align-self: center;
+  text-align: center;
+  z-index: 6;
+  opacity: 1;
+}
+
+
+.slider .item img {
+  border-color: white;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 100%;
+  object-fit: cover;
+  width: 100px;
+  height: 100px;
+  position: relative;
+  top: 50px;
+  z-index: 6;
+  opacity: 1;
+}
+
+.previous, .next {
+  align-self: center;
+  cursor: pointer;
+  transition: 0.5s;
+  z-index: 6;
+  text-decoration: none;
+  opacity: 1;
+}
+
+.arrow_mobile {
+  display: none;
+  text-decoration: none;
+  z-index: 6;
+  opacity: 1;
+}
+
+.previous:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 5px;
+  z-index: 6;
+  opacity: 1;
+}
+
+.slider .item {
+  animation-name: fade;
+  animation-duration: 1.5s;
+  z-index: 6;
+  opacity: 1;
+}
+
+@keyframes fade {
+  /* Устанавливаем и изменяем степень прозрачности: */
+  from {
+      opacity: 0.4
+  }
+  to {
+      opacity: 1
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .item {
+      flex-direction: column;
+      z-index: 6;
+      opacity: 1;
+  }
+
+  .slider {
+      margin: 0;
+      padding: auto;
+      z-index: 6;
+      opacity: 1;
+  }
+
+  .slider .item img {
+      width: 100%;
+      height: 80%;
+      padding: 10px;
+      z-index: 6;
+      opacity: 1;
+  }
+
+  .previous, .next {
+      display: none;
+      z-index: 6;
+      opacity: 1;
+  }
+
+  .arrow_mobile {
+      display: flex;
+      justify-content: space-around;
+      z-index: 6;
+      opacity: 1;
+  }
+
+  .previous_mobile, .next_mobile {
+      align-self: center;
+      cursor: pointer;
+      transition: 0.5s;
+      color: white;
+      z-index: 6;
+      opacity: 1;
+  }
+}
+.uc {
+  font-size: 24px;
+  font-family: "Montserrat"
+}
+.pc{
+  font-size: 20px;
+  font-family: "Montserrat"
+}
+.Name{
+  font-size: 30px;
+  font-family: "Montserrat"
+}
+.Role{
+  font-size: 28px;
+  font-family: "Montserrat"
+}
+.a{
+  transition: 0.8s;
+  width: 130px;
+  height: 50px;
+  text-align: center;
+  vertical-align: center;
+
+}
+.a:hover{
+  background-color: rgb(255, 60, 0);
+}
+.ElGid{
+  font-family: 'Montserrat'; 
+  font-size: 85px; color: white
+}
+.ElGid1{
+  position: relative;
+  width: 100px;
+  height: 200px;
+  z-index: 5;
+  bottom: 500px;
+  left: 18%;
+  margin: 0px;
+}
+@media screen and (max-width: 700px) and (min-width: 551px)
+{
+  .ElGid{
+    font-family: 'Montserrat'; 
+    font-size: 60px; 
+    color: white;
+  }
+  .ElGid1{
+    bottom: 460px;
+    z-index: 33;
+  }
+  .video-container{
+    background-size: cover;
+  }
+  .Adress{
+    font-size: 18px !important
+  }
+  .Adress1{
+    left: 55% !important
+  }
+  .Info{
+    font-size: 20px;
+  }
+
+}
+@media screen and (max-width: 550px){
+  .Adress{
+    position: absolute;
+    right: 20%;
+    font-size: 12px !important;
+    bottom: 100px;
+  }
+  .Adress1{
+    position: relative;
+    bottom: 50%;
+  }
+  .ElGid{
+    font-family: 'Montserrat'; 
+    font-size: 40px; 
+    color: white;
+  }
+  .ElGid1{
+    bottom: 550px;
+    z-index: 33;
+  }
+  .VK1{
+    bottom: 125px !important;
+    width: 30px;
+    height: 30px;
+  }
+  .mail1{
+    bottom: 175px !important;
+    width: 30px;
+    height: 30px;
+    position: relative;
+  }
+  .telegram1{
+    position: relative;
+    bottom: 223px !important;
+    width: 30px;
+    height: 30px;
+    right: 50px !important
+  }
+  .VK2{
+    bottom: 125px !important;
+    width: 30px !important;
+    height: 30px !important
+  }
+  .mail2{
+    bottom: 150px !important;
+    width: 30px !important;
+    height: 30px !important
+  }
+  .telegram2{
+    bottom: 30px !important;
+    width: 30px !important;
+    height: 30px !important
+  }
+  .Line1{
+    display:none;
+  }
+  .Line2{
+    display:none;
+  }
+ .Line3{
+  display: block !important
+ }
+ .Line4{
+  display: block !important
+ }
+ .Info{
+  font-size: 20px !important
+ }
+ .Info2{
+  font-size: 17px !important;
+ }
+ .Most{
+  position: relative;
+  width: 65% !important;
+  height: 20% !important;
+  left: 18% !important;
+  top: 150px !important
+ }
+ .WeKn{
+  left: 3% !important;
+  top:180px !important;
+  font-size: 15px !important;
+  width: 95% !important
+ }
+ .btn{
+  text-align: center;
+  top: 23%;
+  left: 28% !important;
+ }
+}
+@media screen and (max-width: 900px) and (min-width: 550px){
+  .Most{
+    position: relative;
+    width: 50% !important;
+    height: 25% !important;
+    left: 25% !important;
+    top: 150px !important
+   }
+   .WeKn{
+    left: 3% !important;
+    top:180px !important;
+    font-size: 15px !important;
+    width: 95% !important
+   }
+   .btn{
+    text-align: center;
+    top: 23%;
+    left: 40% !important;
+}
+}
+.Line1{
+  z-index: 5; position: relative; bottom: 500px; opacity: 1; left: 13%;
+}
+.VK2{
+  width: 50px; padding: 0; margin: 0; height: 50px;
+}
+.mail2{
+  width: 50px; padding: 0; margin: 0; height: 50px;
+}
+.telegram2{
+  width: 50px; padding: 0; margin: 0; height: 50px;
+}
+.VK1{
+  position: relative; left: 15%; width: 50px; padding: 0; margin: 0; height: 50px;
+}
+.mail1{
+  position: relative; left: 45%; bottom: 50px; width: 50px; padding: 0; margin: 0; height: 50px;
+}
+.telegram1{
+  position: relative; left: 75%; bottom: 100px; width: 50px; padding: 0; margin: 0; height: 50px;
+}
+.Line2{
+  z-index: 5; position: relative; bottom: 600px; opacity: 1; left: 13%;
+}
+.Line3{
+  display: none;
+  z-index: 5; position: relative; bottom: 700px; opacity: 1; left: 13%;
+}
+.Line4{
+  display: none;
+  z-index: 5; position: relative; bottom: 660px; opacity: 1; left: 13%;
+}
+.Perv{
+  list-style-type: none; bottom: 600px; position: relative;
+}
+.Adress1{
+  position: relative; bottom: 650px; width: 400px; left: 60%
+}
+.Adress{
+font-family: Montserrat; font-size: 24px; color: white; width: 350px; margin: 0 ; padding: 0; position: absolute
+}
+.InfoUp{
+  background-color: white; width: 100%; height: 900px; position: relative; z-index: 5; bottom: 500px; justify-content: center;
+}
+.Info{
+  text-align: center; top: 100px; position: relative; font-family: 'Montserrat'; font-size: 30px;
+}
+.Info2{ 
+  text-align: center; font-size: 24px; top: 100px; position: relative; font-family: 'Montserrat'
+}
+.Most{
+  width: 35%; height: 30%; border-radius: 20px; box-shadow: 0 0 5px 2px; position: relative; top: 20%; left: 12%;
+}
+.WeKn{
+  width: 45%;position: relative; top: -9%; left: 50%; font-size: 18px; font-family: 'Montserrat'; text-align: center;
+}
+.btn{
+  border-radius: 20px; position: relative; left: 62%; width: 150px; font-family: 'Montserrat';
+}
+.d2{
+  width: 100%; height: 100px; z-index: 2; position: relative; top: 10px;
+}
+.Vena{
+  width: 100%; height: 1000px; position: relative; bottom: 520px;
+}
+.f2{
+width: 100%; height: 890px; z-index: 3; position: absolute; top: -510px; opacity: .7; background-color: black;
+}
+.muzhiki{
+  height: 400px ; width: 35%; opacity: 1; position: relative; bottom: 1380px;left: 12% ; border-radius: 20px; box-shadow: 0 0 5px; z-index: 3;
+}
+.OurSer{
+  position: relative; bottom: 1800px; left: 59%; font-size: 33px; color: white; z-index: 4; width: 290px; font-family: 'Montserrat'; text-align: center;
+}
+.WeGl{
+  position: relative; bottom: 1800px; left: 49%; font-size: 16px; color: white; z-index: 4; width: 560px; font-family: 'Montserrat' ;text-align: center;
+}
+.Vesi{
+  height: 60px; width: 60px; position: relative; bottom: 1800px; left: 60.7%; z-index: 4;
+}
+.Infor{
+  height: 100px; width: 100xp; position: relative; bottom: 1850px; left: 900px; z-index: 4; color: white; font-size: 20px; font-family: 'Montserrat';
+}
+.Kaled{
+  height: 60px; width: 60xp; position: relative; bottom: 1900px; left: 60.7%; z-index: 4;
+}
+.Fast{
+  height: 100px; width: 300px; position: relative; bottom: 1950px; left: 900px; z-index: 4; color: white; font-size: 20px; font-family: 'Montserrat';
+}
+.Zamok{
+  height: 60px; width: 60xp; position: relative; bottom: 1980px; left: 60.7%; z-index: 4;
+}
+.Nadez{
+  height: 100px; width: 100px; position: relative; bottom: 2030px; left: 900px; z-index: 4; color: white; font-size: 20px; font-family: 'Montserrat';
+}
+@media screen and (max-width: 350px){
+.WeGl{
+  bottom: 1660px; font-size: 15px; left: -40%;
+}
+.Nadez{
+    bottom: 1905px; left: 120px; font-size: 15px;
+    }
+  .Fast{
+    bottom: 1810px; left: 120px; font-size: 15px;
+  }
+  .Infor{
+    bottom: 1700px; left: 120px; font-size: 15px;
+  }
+  .Zamok{
+    bottom: 1880px; left: 20%; width: 40px; height: 40px;
+    }
+  .muzhiki{
+    visibility: hidden; height: 180px;
+  }
+    .OurSer{ 
+    bottom: 1650px; left: 4%; font-size: 26px;
+    }
+    .Vesi{
+      left: 20%; bottom: 1670px; width: 40px; height: 40px;
+    }
+  .Kaled{
+      bottom: 1780px; left: 20%; width: 40px; height: 40px;
+      }
+}
+@media screen and (max-width: 400px) and (min-width: 351px){
+  .WeGl{
+    bottom: 1660px; font-size: 15px; left: -28%;
+  }
+  .Nadez{
+    bottom: 1905px; left: 140px; font-size: 15px;
+    }
+  .Fast{
+    bottom: 1810px; left: 140px; font-size: 15px;
+  }
+  .Infor{
+    bottom: 1700px; left: 140px; font-size: 15px;
+  }
+  .Zamok{
+    bottom: 1880px; left: 25%; width: 40px; height: 40px;
+    }
+    .muzhiki{
+      visibility: hidden; height: 180px;
+       }
+    .OurSer{
+     bottom: 1650px; left: 10%; font-size: 26px;
+    }
+    .Vesi{
+      left: 25%; bottom: 1670px; width: 40px; height: 40px;
+    }
+  .Kaled{
+      bottom: 1780px; left: 25%; width: 40px; height: 40px;
+      }
+}
+@media screen and (max-width: 450px) and (min-width: 401px){
+  .WeGl{
+    bottom: 1660px; font-size: 14px; left: -17%;
+  }
+  .Nadez{
+    bottom: 1905px; left: 160px; font-size: 16px;
+    }
+  .Fast{
+    bottom: 1810px; left: 160px; font-size: 16px;
+  }
+  .Infor{
+    bottom: 1700px; left: 160px; font-size: 16px;
+  }
+  .Zamok{
+    bottom: 1880px; left: 25%; width: 40px; height: 40px;
+    }
+    .muzhiki{
+      visibility: hidden; height: 180px;
+       }
+    .OurSer{
+     bottom: 1650px; left: 15%; font-size: 26px;
+    }
+    .Vesi{
+      left: 25%; bottom: 1670px; width: 40px; height: 40px;
+    }
+  .Kaled{
+      bottom: 1780px; left: 25%; width: 40px; height: 40px;
+      }
+}
+@media screen and (max-width: 500px) and (min-width: 451px){
+  .WeGl{
+    bottom: 1660px; font-size: 18px; left: -7%;
+  }
+  .Nadez{
+    bottom: 1920px; left: 200px; font-size: 20px;
+    }
+  .Fast{
+    bottom: 1820px; left: 200px; font-size: 20px;
+  }
+  .Infor{
+    bottom: 1715px; left: 200px; font-size: 20px;
+  }
+  .Zamok{
+    bottom: 1880px; left: 30%
+    }
+    .muzhiki{
+      visibility: hidden; height: 200px;
+       }
+    .OurSer{
+     bottom: 1650px; left: 22%; font-size: 30px;
+    }
+    .Vesi{
+      left: 30%; bottom: 1670px;
+    }
+  .Kaled{
+      bottom: 1780px; left: 30%;
+      }
+}
+@media screen and (max-width: 550px) and (min-width: 501px){
+  .muzhiki{
+    visibility: hidden; height: 200px;
+     }
+  .OurSer{
+   bottom: 1650px; left: 22%; font-size: 30px;
+  }
+  .WeGl{
+    bottom: 1660px; font-size: 18px; left: -3%;
+  }
+  .Vesi{
+    left: 30%; bottom: 1670px;
+  }
+  .Infor{
+    bottom: 1715px; left: 220px; font-size: 20px;
+  }
+  .Kaled{
+  bottom: 1780px; left: 30%;
+  }
+  .Fast{
+  bottom: 1820px; left: 220px; font-size: 20px;
+  }
+  .Zamok{
+  bottom: 1880px; left: 30%
+  }
+  .Nadez{
+  bottom: 1920px; left: 220px; font-size: 20px;
+  }
+}
+@media screen and (max-width: 700px) and (min-width: 551px){
+  .muzhiki{
+    visibility: hidden;
+    height: 200px;
+     }
+  .OurSer{
+   bottom: 1650px;
+   left: 30%;
+   font-size: 30px;
+  }
+  .WeGl{
+    bottom: 1660px;
+    font-size: 18px;
+    left: 9%;
+  }
+  .Vesi{
+    left: 35%;
+    bottom: 1670px;
+  }
+  .Infor{
+    bottom: 1715px; left: 300px; font-size: 20px;
+  }
+  .Kaled{
+  bottom: 1780px; left: 35%;
+  }
+  .Fast{
+  bottom: 1820px;
+  left: 300px;
+  font-size: 20px;
+  }
+  .Zamok{
+  bottom: 1880px;
+  left: 35%
+  }
+  .Nadez{
+  bottom: 1920px; left: 300px; font-size: 20px;
+  }
+}
+@media screen and (max-width: 950px) and (min-width: 901px){
+  .WeGl{
+    left: 39%;
+    font-size: 15px;
+  }
+  .muzhiki{
+    left: 2%;
+    width: 40%;
+  }
+  .OurSer{
+    left: 53%;
+  }
+  .Infor{
+    font-size: 15px;
+  }
+  .Fast{
+    font-size: 15px;
+  }
+  .Nadez{
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 900px) and (min-width: 851px) {
+  .WeGl{
+    left: 36%;
+    font-size: 15px;
+    bottom: 1730px;
+    font-size: 15px;
+  }
+  .muzhiki{
+    left: 10%;
+    width: 35%;
+    height: 300px;
+    bottom: 1380px;
+  }
+  .OurSer{
+    left: 52%;
+    bottom: 1730px;
+    font-size: 28px;
+  }
+  .Vesi{
+    bottom: 1730px;
+    width: 45px;
+    height: 45px;
+  }
+  .Kaled{
+    bottom: 1830px;
+    width: 45px;
+    height: 45px;
+  }
+  .Zamok{
+    bottom: 1930px;
+    width: 45px;
+    height: 45px;
+  }
+  .Infor{
+    left: 560px;
+    font-size: 15px;
+    bottom: 1760px;
+  }
+  .Fast{
+    left: 560px;
+    font-size: 15px;
+    bottom: 1860px;
+  }
+  .Nadez{
+    left: 560px;
+    font-size: 15px;
+    bottom: 1960px;
+  }
+}
+@media screen and (max-width: 800px) and (min-width: 751px) {
+  .WeGl{
+    left: 36%;
+    font-size: 15px;
+    bottom: 1730px;
+    font-size: 15px;
+  }
+  .muzhiki{
+    left: 10%;
+    width: 35%;
+    height: 300px;
+    bottom: 1380px;
+  }
+  .OurSer{
+    left: 52%;
+    bottom: 1730px;
+    font-size: 28px;
+  }
+  .Vesi{
+    bottom: 1730px;
+    width: 45px;
+    height: 45px;
+  }
+  .Kaled{
+    bottom: 1830px;
+    width: 45px;
+    height: 45px;
+  }
+  .Zamok{
+    bottom: 1930px;
+    width: 45px;
+    height: 45px;
+  }
+  .Infor{
+    left: 535px;
+    font-size: 15px;
+    bottom: 1760px;
+  }
+  .Fast{
+    left: 535px;
+    font-size: 15px;
+    bottom: 1860px;
+  }
+  .Nadez{
+    left: 535px;
+    font-size: 15px;
+    bottom: 1960px;
+  }
+}
+@media screen and (max-width: 750px) and (min-width: 701px) {
+  .WeGl{
+    left: 36%;
+    font-size: 15px;
+    bottom: 1730px;
+    font-size: 15px;
+  }
+  .muzhiki{
+    left: 10%;
+    width: 35%;
+    height: 300px;
+    bottom: 1380px;
+  }
+  .OurSer{
+    left: 52%;
+    bottom: 1730px;
+    font-size: 28px;
+  }
+  .Vesi{
+    bottom: 1730px;
+    width: 45px;
+    height: 45px;
+  }
+  .Kaled{
+    bottom: 1830px;
+    width: 45px;
+    height: 45px;
+  }
+  .Zamok{
+    bottom: 1930px;
+    width: 45px;
+    height: 45px;
+  }
+  .Infor{
+    left: 505px;
+    font-size: 15px;
+    bottom: 1760px;
+  }
+  .Fast{
+    left: 505px;
+    font-size: 15px;
+    bottom: 1860px;
+  }
+  .Nadez{
+    left: 505px;
+    font-size: 15px;
+    bottom: 1960px;
+  }
+}
+@media screen and (max-width: 850px) and (min-width: 801px) {
+  .WeGl{
+    left: 36%;
+    font-size: 15px;
+    bottom: 1730px;
+    font-size: 15px;
+  }
+  .muzhiki{
+    left: 10%;
+    width: 35%;
+    height: 300px;
+    bottom: 1380px;
+  }
+  .OurSer{
+    left: 52%;
+    bottom: 1730px;
+    font-size: 28px;
+  }
+  .Vesi{
+    bottom: 1730px;
+    width: 45px;
+    height: 45px;
+  }
+  .Kaled{
+    bottom: 1830px;
+    width: 45px;
+    height: 45px;
+  }
+  .Zamok{
+    bottom: 1930px;
+    width: 45px;
+    height: 45px;
+  }
+  .Infor{
+    left: 555px;
+    font-size: 15px;
+    bottom: 1760px;
+  }
+  .Fast{
+    left: 555px;
+    font-size: 15px;
+    bottom: 1860px;
+  }
+  .Nadez{
+    left: 555px;
+    font-size: 15px;
+    bottom: 1960px;
+  }
+}
+@media screen and (max-width: 1070px) and (min-width: 951px){
+  .WeGl{
+    left: 44%;
+    font-size: 15px;
+  }
+  .muzhiki{
+    left: 12%;
+    width: 36%;
+    height: 350px;
+  }
+  .OurSer{
+    left: 58%;
+  }
+}
+@media screen and (max-width: 1070px) and (min-width: 1000px){
+  .Infor{
+    left: 750px;
+  }
+ .Fast{
+  left: 750px;
+ }
+ .Nadez{
+  left: 750px;
+ }
+}
+@media screen and (max-width: 999px) and (min-width: 900px){
+  .Infor{
+  left: 660px;
+  }
+ .Fast{
+  left: 660px;
+ }
+ .Nadez{
+  left: 660px;
+ }
+}
+.d3{
+  background-color: white; width: 100%; height: 900px; position: relative; z-index: 4; bottom: 1930px; justify-content: center;
+}
+.Gallery1{
+  position: relative; font-size: 50px; color: black; text-align: center; top: 80px;
+}
+.krug1{
+  width: 350px; height: 270px; border-radius: 20px; box-shadow: 0 0 5px;
+}
+.krug2{
+  width: 350px; height: 270px;
+}
+.krug3{
+  width: 350px; height: 270px;
+}
+.Most1{
+  font-size: 18px; font-family: 'Montserrat'; position: absolute; top: 300px; z-index: 4; left: 100px;
+}
+.Sad1{
+  font-size: 18px; font-family: 'Montserrat'; position: absolute; top: 300px; z-index: 4; left: 500px;
+}
+.Skver1{
+  font-size: 18px; font-family: 'Montserrat'; position: absolute; top: 300px; z-index: 4; left: 860px;
+}
+.France1{
+  z-index: -1;width: 100%; height: 600px; border-radius: 0px; box-shadow: 0 0 0px; position: relative; top: 450px; 
+}
+.f3{
+  background-color: black; opacity: .4; width: 100%; height: 635px; position: absolute; bottom: -565px; font-family: Roboto
+}
+.Comment{
+  color: white; font-size: 50px; font-family: Roboto Slab; position: relative; bottom: 60px; text-align: center; font-family: "Montserrat" 
+}
+.g3{
+  background-color: white; width: 100%; height: 900px; position: relative; z-index: 5; bottom: 540px; justify-content: center;
+}
+.Team1{
+  text-align: center; font-size: 50px; color: black; position: relative; bottom: 1350px; z-index: 6; font-family: 'Montserrat'
+}
+.Vitalya1{
+  width: 300px; height: 300px; border-radius: 20px; box-shadow: 0 0 5px 2px;
+}
+.VKV{
+  position: relative; z-index: 7; bottom: 20px;
+}
+.NameV{
+  position: relative; top: 50px;
+}
+.RoleV{
+  position: relative; top: 50px;
+}
+.Danya1{
+  width: 300px; height: 300px; border-radius: 20px; box-shadow: 0 0 5px 2px;
+}
+.VKD{
+  position: relative; z-index: 7; bottom: 20px;
+}
+.NameD{
+  position: relative; top: 30px;
+}
+.RoleD{
+  position: relative; top: 30px;
+}
+.Masha1{
+  width: 300px; height: 300px; border-radius: 20px; box-shadow: 0 0 5px 2px;
+}
+.VKM{
+  position: relative; z-index: 7; bottom: 20px;
+}
+.NameM{
+  position: relative; top: 30px;
+}
+.RoleM{
+  position: relative; top: 30px;
+}
+/*.wrapper{position:relative; max-width:100wv; overflow:hidden;}
