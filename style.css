@@ -1,4 +1,4 @@
-
+﻿
 .video-container {
     background-attachment:fixed;
     bottom: 80px;
@@ -144,7 +144,7 @@ img.krug {
   border-width: 2px;
   border-style: solid;
   transition: 0.5s;
-  background-color: black;
+  background-color: gray;
   opacity: .9;
   z-index: 6;
 }
