@@ -1,4 +1,4 @@
-﻿
+
 .video-container {
     background-attachment:fixed;
     bottom: 80px;
@@ -119,11 +119,37 @@
   box-shadow: 0 0 5px;
   opacity: 1;
 }
+.photo1{
+  width: 350px;
+  height: 270px;
+  overflow: hidden;
+  border-radius: 20px; 
+  box-shadow: 0 0 5px;
+  opacity: 1;
+}
+.photo2{
+  width: 350px;
+  height: 270px;
+  overflow: hidden;
+  border-radius: 20px; 
+  box-shadow: 0 0 5px;
+  opacity: 1;
+}
+.photo3{
+  width: 350px;
+  height: 270px;
+  overflow: hidden;
+  border-radius: 20px; 
+  box-shadow: 0 0 5px;
+  opacity: 1;
+}
 img.krug {
   transition: transform 0.25s;
   border-radius: 20px; 
   box-shadow: 0 0 5px;
   opacity: 1;
+  width: 350px;
+  height: 270px;
 }
 .photo:hover img {
   transform: scale(1.1);
@@ -144,7 +170,7 @@ img.krug {
   border-width: 2px;
   border-style: solid;
   transition: 0.5s;
-  background-color: gray;
+  background-color: black;
   opacity: .9;
   z-index: 6;
 }
@@ -514,6 +540,9 @@ font-family: Montserrat; font-size: 24px; color: white; width: 350px; margin: 0 
 .Vena{
   width: 100%; height: 1000px; position: relative; bottom: 520px;
 }
+.Vena1{
+  width: 100%; height: 1000px; position: absolute; bottom: 520px;
+}
 .f2{
 width: 100%; height: 890px; z-index: 3; position: absolute; top: -510px; opacity: .7; background-color: black;
 }
@@ -544,411 +573,744 @@ width: 100%; height: 890px; z-index: 3; position: absolute; top: -510px; opacity
 .Nadez{
   height: 100px; width: 100px; position: relative; bottom: 2030px; left: 900px; z-index: 4; color: white; font-size: 20px; font-family: 'Montserrat';
 }
-@media screen and (max-width: 350px){
-.WeGl{
-  bottom: 1660px; font-size: 15px; left: -40%;
-}
-.Nadez{
-    bottom: 1905px; left: 120px; font-size: 15px;
-    }
-  .Fast{
-    bottom: 1810px; left: 120px; font-size: 15px;
+@media screen and (max-width: 329px) and (min-width: 300px){
+  .Vena{
+    height: 900px;
+   display: hidden; 
   }
-  .Infor{
-    bottom: 1700px; left: 120px; font-size: 15px;
+  .Vena1{
+    bottom: 220px;
+    height: 400px;
+    width: 100%
   }
-  .Zamok{
-    bottom: 1880px; left: 20%; width: 40px; height: 40px;
-    }
-  .muzhiki{
-    visibility: hidden; height: 180px;
-  }
-    .OurSer{ 
-    bottom: 1650px; left: 4%; font-size: 26px;
-    }
-    .Vesi{
-      left: 20%; bottom: 1670px; width: 40px; height: 40px;
-    }
-  .Kaled{
-      bottom: 1780px; left: 20%; width: 40px; height: 40px;
-      }
-}
-@media screen and (max-width: 400px) and (min-width: 351px){
-  .WeGl{
-    bottom: 1660px; font-size: 15px; left: -28%;
-  }
-  .Nadez{
-    bottom: 1905px; left: 140px; font-size: 15px;
-    }
-  .Fast{
-    bottom: 1810px; left: 140px; font-size: 15px;
-  }
-  .Infor{
-    bottom: 1700px; left: 140px; font-size: 15px;
-  }
-  .Zamok{
-    bottom: 1880px; left: 25%; width: 40px; height: 40px;
-    }
-    .muzhiki{
-      visibility: hidden; height: 180px;
-       }
-    .OurSer{
-     bottom: 1650px; left: 10%; font-size: 26px;
-    }
-    .Vesi{
-      left: 25%; bottom: 1670px; width: 40px; height: 40px;
-    }
-  .Kaled{
-      bottom: 1780px; left: 25%; width: 40px; height: 40px;
-      }
-}
-@media screen and (max-width: 450px) and (min-width: 401px){
-  .WeGl{
-    bottom: 1660px; font-size: 14px; left: -17%;
-  }
-  .Nadez{
-    bottom: 1905px; left: 160px; font-size: 16px;
-    }
-  .Fast{
-    bottom: 1810px; left: 160px; font-size: 16px;
-  }
-  .Infor{
-    bottom: 1700px; left: 160px; font-size: 16px;
-  }
-  .Zamok{
-    bottom: 1880px; left: 25%; width: 40px; height: 40px;
-    }
-    .muzhiki{
-      visibility: hidden; height: 180px;
-       }
-    .OurSer{
-     bottom: 1650px; left: 15%; font-size: 26px;
-    }
-    .Vesi{
-      left: 25%; bottom: 1670px; width: 40px; height: 40px;
-    }
-  .Kaled{
-      bottom: 1780px; left: 25%; width: 40px; height: 40px;
-      }
-}
-@media screen and (max-width: 500px) and (min-width: 451px){
-  .WeGl{
-    bottom: 1660px; font-size: 18px; left: -7%;
-  }
-  .Nadez{
-    bottom: 1920px; left: 200px; font-size: 20px;
-    }
-  .Fast{
-    bottom: 1820px; left: 200px; font-size: 20px;
-  }
-  .Infor{
-    bottom: 1715px; left: 200px; font-size: 20px;
-  }
-  .Zamok{
-    bottom: 1880px; left: 30%
-    }
-    .muzhiki{
-      visibility: hidden; height: 200px;
-       }
-    .OurSer{
-     bottom: 1650px; left: 22%; font-size: 30px;
-    }
-    .Vesi{
-      left: 30%; bottom: 1670px;
-    }
-  .Kaled{
-      bottom: 1780px; left: 30%;
-      }
-}
-@media screen and (max-width: 550px) and (min-width: 501px){
-  .muzhiki{
-    visibility: hidden; height: 200px;
-     }
-  .OurSer{
-   bottom: 1650px; left: 22%; font-size: 30px;
-  }
-  .WeGl{
-    bottom: 1660px; font-size: 18px; left: -3%;
-  }
-  .Vesi{
-    left: 30%; bottom: 1670px;
-  }
-  .Infor{
-    bottom: 1715px; left: 220px; font-size: 20px;
-  }
-  .Kaled{
-  bottom: 1780px; left: 30%;
-  }
-  .Fast{
-  bottom: 1820px; left: 220px; font-size: 20px;
-  }
-  .Zamok{
-  bottom: 1880px; left: 30%
-  }
-  .Nadez{
-  bottom: 1920px; left: 220px; font-size: 20px;
-  }
-}
-@media screen and (max-width: 700px) and (min-width: 551px){
   .muzhiki{
     visibility: hidden;
     height: 200px;
      }
   .OurSer{
-   bottom: 1650px;
-   left: 30%;
-   font-size: 30px;
+   bottom: 1600px;
+   left: 4%;
+   font-size: 24px;
   }
   .WeGl{
-    bottom: 1660px;
-    font-size: 18px;
-    left: 9%;
+    bottom: 1610px;
+    font-size: 12px;
+    left: -40%;
+  }
+  .Vesi{
+    left: 25%;
+    bottom: 1620px;
+    width: 45px;
+    height: 45px;
+  }
+  .Infor{
+    bottom: 1655px; left: 140px; font-size: 14px;
+  }
+  .Kaled{
+  bottom: 1730px; left: 24%; width: 45px;
+  height: 45px;
+  }
+  .Fast{
+  bottom: 1760px;
+  left: 140px;
+  font-size: 14px;
+  }
+  .Zamok{
+  bottom: 1830px;
+  left: 25%;
+  width: 45px;
+    height: 45px;
+  }
+  .Nadez{
+  bottom: 1860px; left: 140px; font-size: 14px;
+  }
+}
+@media screen and (max-width: 350px) and (min-width: 330px){
+  .Vena{
+    height: 900px;
+   display: hidden; 
+  }
+  .Vena1{
+    bottom: 220px;
+    height: 400px;
+    width: 100%
+  }
+  .muzhiki{
+    visibility: hidden;
+    height: 200px;
+     }
+  .OurSer{
+   bottom: 1600px;
+   left: 6%;
+   font-size: 24px;
+  }
+  .WeGl{
+    bottom: 1610px;
+    font-size: 12px;
+    left: -36%;
+  }
+  .Vesi{
+    left: 25%;
+    bottom: 1620px;
+    width: 45px;
+    height: 45px;
+  }
+  .Infor{
+    bottom: 1655px; left: 140px; font-size: 14px;
+  }
+  .Kaled{
+  bottom: 1730px; left: 24%; width: 45px;
+  height: 45px;
+  }
+  .Fast{
+  bottom: 1760px;
+  left: 140px;
+  font-size: 14px;
+  }
+  .Zamok{
+  bottom: 1830px;
+  left: 25%;
+  width: 45px;
+    height: 45px;
+  }
+  .Nadez{
+  bottom: 1860px; left: 140px; font-size: 14px;
+  }
+}
+@media screen and (max-width: 400px) and (min-width: 351px){
+  .Vena{
+    height: 900px;
+   display: hidden; 
+  }
+  .Vena1{
+    bottom: 220px;
+    height: 400px;
+    width: 100%
+  }
+  .muzhiki{
+    visibility: hidden;
+    height: 200px;
+     }
+  .OurSer{
+   bottom: 1600px;
+   left: 9%;
+   font-size: 24px;
+  }
+  .WeGl{
+    bottom: 1610px;
+    font-size: 12px;
+    left: -27%;
+  }
+  .Vesi{
+    left: 25%;
+    bottom: 1620px;
+    width: 45px;
+    height: 45px;
+  }
+  .Infor{
+    bottom: 1655px; left: 140px; font-size: 14px;
+  }
+  .Kaled{
+  bottom: 1730px; left: 24%; width: 45px;
+  height: 45px;
+  }
+  .Fast{
+  bottom: 1760px;
+  left: 140px;
+  font-size: 14px;
+  }
+  .Zamok{
+  bottom: 1830px;
+  left: 25%;
+  width: 45px;
+    height: 45px;
+  }
+  .Nadez{
+  bottom: 1860px; left: 140px; font-size: 14px;
+  }
+}
+@media screen and (max-width: 450px) and (min-width: 401px){
+  .Vena{
+    height: 900px;
+   display: hidden; 
+  }
+  .Vena1{
+    bottom: 220px;
+    height: 400px;
+    width: 100%
+  }
+  .muzhiki{
+    visibility: hidden;
+    height: 200px;
+     }
+  .OurSer{
+   bottom: 1600px;
+   left: 19%;
+   font-size: 24px;
+  }
+  .WeGl{
+    bottom: 1610px;
+    font-size: 12px;
+    left: -12%;
+  }
+  .Vesi{
+    left: 31%;
+    bottom: 1620px;
+    width: 45px;
+    height: 45px;
+  }
+  .Infor{
+    bottom: 1655px; left: 180px; font-size: 14px;
+  }
+  .Kaled{
+  bottom: 1730px; left: 31%; width: 45px;
+  height: 45px;
+  }
+  .Fast{
+  bottom: 1760px;
+  left: 180px;
+  font-size: 14px;
+  }
+  .Zamok{
+  bottom: 1830px;
+  left: 31%;
+  width: 45px;
+    height: 45px;
+  }
+  .Nadez{
+  bottom: 1860px; left: 180px; font-size: 14px;
+  }
+}
+@media screen and (max-width: 500px) and (min-width: 451px){
+  .Vena{
+    height: 900px;
+   display: hidden; 
+  }
+  .Vena1{
+    bottom: 220px;
+    height: 400px;
+    width: 100%
+  }
+  .muzhiki{
+    visibility: hidden;
+    height: 200px;
+     }
+  .OurSer{
+   bottom: 1600px;
+   left: 22%;
+   font-size: 24px;
+  }
+  .WeGl{
+    bottom: 1610px;
+    font-size: 12px;
+    left: -7%;
   }
   .Vesi{
     left: 35%;
-    bottom: 1670px;
+    bottom: 1620px;
+    width: 45px;
+    height: 45px;
   }
   .Infor{
-    bottom: 1715px; left: 300px; font-size: 20px;
+    bottom: 1655px; left: 220px; font-size: 14px;
   }
   .Kaled{
-  bottom: 1780px; left: 35%;
+  bottom: 1730px; left: 35%; width: 45px;
+  height: 45px;
   }
   .Fast{
-  bottom: 1820px;
-  left: 300px;
-  font-size: 20px;
+  bottom: 1760px;
+  left: 220px;
+  font-size: 14px;
   }
   .Zamok{
-  bottom: 1880px;
-  left: 35%
+  bottom: 1830px;
+  left: 35%;
+  width: 45px;
+    height: 45px;
   }
   .Nadez{
-  bottom: 1920px; left: 300px; font-size: 20px;
+  bottom: 1860px; left: 220px; font-size: 14px;
+  }
+}
+@media screen and (max-width: 550px) and (min-width: 501px){
+  .Vena{
+    height: 900px;
+   display: hidden; 
+  }
+  .Vena1{
+    bottom: 50px;
+    height: 800px;
+    width: 100%
+  }
+  .muzhiki{
+    visibility: hidden;
+    height: 200px;
+     }
+  .OurSer{
+   bottom: 1600px;
+   left: 22%;
+   font-size: 24px;
+  }
+  .WeGl{
+    bottom: 1610px;
+    font-size: 12px;
+    left: -7%;
+  }
+  .Vesi{
+    left: 35%;
+    bottom: 1620px;
+    width: 45px;
+    height: 45px;
+  }
+  .Infor{
+    bottom: 1655px; left: 230px; font-size: 14px;
+  }
+  .Kaled{
+  bottom: 1730px; left: 35%; width: 45px;
+  height: 45px;
+  }
+  .Fast{
+  bottom: 1760px;
+  left: 230px;
+  font-size: 14px;
+  }
+  .Zamok{
+  bottom: 1830px;
+  left: 35%;
+  width: 45px;
+    height: 45px;
+  }
+  .Nadez{
+  bottom: 1860px; left: 230px; font-size: 14px;
+  }
+}
+@media screen and (max-width: 600px) and (min-width: 551px){
+  .Vena{
+    height: 900px;
+   display: hidden; 
+  }
+  .Vena1{
+    bottom: 50px;
+    height: 800px;
+    width: 100%
+  }
+  .muzhiki{
+    visibility: hidden;
+    height: 200px;
+     }
+  .OurSer{
+   bottom: 1600px;
+   left: 24%;
+   font-size: 24px;
+  }
+  .WeGl{
+    bottom: 1610px;
+    font-size: 12px;
+    left: 0;
+  }
+  .Vesi{
+    left: 34%;
+    bottom: 1620px;
+    width: 45px;
+    height: 45px;
+  }
+  .Infor{
+    bottom: 1655px; left: 250px; font-size: 14px;
+  }
+  .Kaled{
+  bottom: 1730px; left: 34%; width: 45px;
+  height: 45px;
+  }
+  .Fast{
+  bottom: 1760px;
+  left: 250px;
+  font-size: 14px;
+  }
+  .Zamok{
+  bottom: 1830px;
+  left: 34%;
+  width: 45px;
+    height: 45px;
+  }
+  .Nadez{
+  bottom: 1860px; left: 250px; font-size: 14px;
+  }
+}
+@media screen and (max-width: 650px) and (min-width: 601px){
+  .Vena{
+    height: 900px;
+   display: hidden; 
+  }
+  .Vena1{
+    bottom: 50px;
+    height: 800px;
+    width: 100%
+  }
+  .muzhiki{
+    visibility: hidden;
+    height: 200px;
+     }
+  .OurSer{
+   bottom: 1600px;
+   left: 25%;
+   font-size: 24px;
+  }
+  .WeGl{
+    bottom: 1610px;
+    font-size: 12px;
+    left: 2%;
+  }
+  .Vesi{
+    left: 36%;
+    bottom: 1620px;
+    width: 45px;
+    height: 45px;
+  }
+  .Infor{
+    bottom: 1655px; left: 270px; font-size: 14px;
+  }
+  .Kaled{
+  bottom: 1730px; left: 36%; width: 45px;
+  height: 45px;
+  }
+  .Fast{
+  bottom: 1760px;
+  left: 270px;
+  font-size: 14px;
+  }
+  .Zamok{
+  bottom: 1830px;
+  left: 36%;
+  width: 45px;
+    height: 45px;
+  }
+  .Nadez{
+  bottom: 1860px; left: 270px; font-size: 14px;
+  }
+}
+@media screen and (max-width: 700px) and (min-width: 651px){
+  .Vena{
+    height: 900px;
+   display: hidden; 
+  }
+  .Vena1{
+    bottom: 50px;
+    height: 800px;
+    width: 100%
+  }
+  .muzhiki{
+    visibility: hidden;
+    height: 200px;
+     }
+  .OurSer{
+   bottom: 1600px;
+   left: 26%;
+   font-size: 24px;
+  }
+  .WeGl{
+    bottom: 1610px;
+    font-size: 12px;
+    left: 5%;
+  }
+  .Vesi{
+    left: 36%;
+    bottom: 1620px;
+    width: 45px;
+    height: 45px;
+  }
+  .Infor{
+    bottom: 1655px; left: 290px; font-size: 14px;
+  }
+  .Kaled{
+  bottom: 1730px; left: 36%; width: 45px;
+  height: 45px;
+  }
+  .Fast{
+  bottom: 1760px;
+  left: 290px;
+  font-size: 14px;
+  }
+  .Zamok{
+  bottom: 1830px;
+  left: 36%;
+  width: 45px;
+    height: 45px;
+  }
+  .Nadez{
+  bottom: 1860px; left: 290px; font-size: 14px;
   }
 }
 @media screen and (max-width: 950px) and (min-width: 901px){
+  .Vena{
+    height: 800px;
+  }
+  .Vena1{
+    display: none;
+  }
   .WeGl{
     left: 39%;
     font-size: 15px;
+    bottom: 1700px;
   }
   .muzhiki{
+    bottom: 1280px;
     left: 2%;
     width: 40%;
   }
   .OurSer{
     left: 53%;
+    bottom: 1700px;
   }
   .Infor{
     font-size: 15px;
+    bottom: 1750px;
   }
   .Fast{
+    bottom: 1850px;
     font-size: 15px;
   }
   .Nadez{
     font-size: 15px;
+    bottom: 1950px;
+  }
+  .Zamok{
+    bottom: 1910px;
+  }
+  .Kaled{
+    bottom: 1810px;
+  }
+  .Vesi{
+    bottom: 1710px;
   }
 }
 @media screen and (max-width: 900px) and (min-width: 851px) {
+  .Vena{
+    height: 800px;
+  }
+  .Vena1{
+    display: none;
+  }
   .WeGl{
     left: 36%;
     font-size: 15px;
-    bottom: 1730px;
+    bottom: 1620px;
     font-size: 15px;
   }
   .muzhiki{
     left: 10%;
     width: 35%;
     height: 300px;
-    bottom: 1380px;
+    bottom: 1280px;
   }
   .OurSer{
     left: 52%;
-    bottom: 1730px;
+    bottom: 1615px;
     font-size: 28px;
   }
   .Vesi{
-    bottom: 1730px;
+    bottom: 1630px;
     width: 45px;
     height: 45px;
   }
   .Kaled{
-    bottom: 1830px;
+    bottom: 1730px;
     width: 45px;
     height: 45px;
   }
   .Zamok{
-    bottom: 1930px;
+    bottom: 1830px;
     width: 45px;
     height: 45px;
   }
   .Infor{
-    left: 560px;
+    left: 580px;
     font-size: 15px;
-    bottom: 1760px;
+    bottom: 1670px;
   }
   .Fast{
-    left: 560px;
+    left: 580px;
     font-size: 15px;
-    bottom: 1860px;
+    bottom: 1770px;
   }
   .Nadez{
-    left: 560px;
+    left: 580px;
     font-size: 15px;
-    bottom: 1960px;
+    bottom: 1870px;
   }
 }
 @media screen and (max-width: 800px) and (min-width: 751px) {
+  .Vena{
+    height: 800px;
+  }
+  .Vena1{
+    display: none;
+  }
   .WeGl{
     left: 36%;
     font-size: 15px;
-    bottom: 1730px;
+    bottom: 1620px;
     font-size: 15px;
   }
   .muzhiki{
     left: 10%;
     width: 35%;
     height: 300px;
-    bottom: 1380px;
+    bottom: 1280px;
   }
   .OurSer{
-    left: 52%;
-    bottom: 1730px;
+    left: 54%;
+    bottom: 1615px;
     font-size: 28px;
   }
   .Vesi{
-    bottom: 1730px;
+    bottom: 1630px;
     width: 45px;
     height: 45px;
   }
   .Kaled{
-    bottom: 1830px;
+    bottom: 1730px;
     width: 45px;
     height: 45px;
   }
   .Zamok{
-    bottom: 1930px;
+    bottom: 1830px;
     width: 45px;
     height: 45px;
   }
   .Infor{
     left: 535px;
     font-size: 15px;
-    bottom: 1760px;
+    bottom: 1670px;
   }
   .Fast{
     left: 535px;
     font-size: 15px;
-    bottom: 1860px;
+    bottom: 1770px;
   }
   .Nadez{
     left: 535px;
     font-size: 15px;
-    bottom: 1960px;
+    bottom: 1870px;
   }
 }
 @media screen and (max-width: 750px) and (min-width: 701px) {
+  .Vena{
+    height: 800px;
+  }
+  .Vena1{
+    display: none;
+  }
   .WeGl{
     left: 36%;
     font-size: 15px;
-    bottom: 1730px;
+    bottom: 1620px;
     font-size: 15px;
   }
   .muzhiki{
     left: 10%;
     width: 35%;
     height: 300px;
-    bottom: 1380px;
+    bottom: 1280px;
   }
   .OurSer{
-    left: 52%;
-    bottom: 1730px;
+    left: 54%;
+    bottom: 1615px;
     font-size: 28px;
   }
   .Vesi{
-    bottom: 1730px;
+    bottom: 1630px;
     width: 45px;
     height: 45px;
   }
   .Kaled{
-    bottom: 1830px;
+    bottom: 1730px;
     width: 45px;
     height: 45px;
   }
   .Zamok{
-    bottom: 1930px;
+    bottom: 1830px;
     width: 45px;
     height: 45px;
   }
   .Infor{
     left: 505px;
     font-size: 15px;
-    bottom: 1760px;
+    bottom: 1670px;
   }
   .Fast{
     left: 505px;
     font-size: 15px;
-    bottom: 1860px;
+    bottom: 1770px;
   }
   .Nadez{
     left: 505px;
     font-size: 15px;
-    bottom: 1960px;
+    bottom: 1870px;
   }
 }
 @media screen and (max-width: 850px) and (min-width: 801px) {
+  .Vena{
+    height: 800px;
+  }
+  .Vena1{
+    display: none;
+  }
   .WeGl{
     left: 36%;
     font-size: 15px;
-    bottom: 1730px;
+    bottom: 1620px;
     font-size: 15px;
   }
   .muzhiki{
     left: 10%;
     width: 35%;
     height: 300px;
-    bottom: 1380px;
+    bottom: 1280px;
   }
   .OurSer{
     left: 52%;
-    bottom: 1730px;
+    bottom: 1615px;
     font-size: 28px;
   }
   .Vesi{
-    bottom: 1730px;
+    bottom: 1630px;
     width: 45px;
     height: 45px;
   }
   .Kaled{
-    bottom: 1830px;
+    bottom: 1730px;
     width: 45px;
     height: 45px;
   }
   .Zamok{
-    bottom: 1930px;
+    bottom: 1830px;
     width: 45px;
     height: 45px;
   }
   .Infor{
     left: 555px;
     font-size: 15px;
-    bottom: 1760px;
+    bottom: 1670px;
   }
   .Fast{
     left: 555px;
     font-size: 15px;
-    bottom: 1860px;
+    bottom: 1770px;
   }
   .Nadez{
     left: 555px;
     font-size: 15px;
-    bottom: 1960px;
+    bottom: 1870px;
   }
 }
 @media screen and (max-width: 1070px) and (min-width: 951px){
   .WeGl{
     left: 44%;
     font-size: 15px;
+  }
+  .Vena1{
+    display: none;
   }
   .muzhiki{
     left: 12%;
@@ -963,6 +1325,9 @@ width: 100%; height: 890px; z-index: 3; position: absolute; top: -510px; opacity
   .Infor{
     left: 750px;
   }
+  .Vena1{
+    display: none;
+  }
  .Fast{
   left: 750px;
  }
@@ -973,6 +1338,9 @@ width: 100%; height: 890px; z-index: 3; position: absolute; top: -510px; opacity
 @media screen and (max-width: 999px) and (min-width: 900px){
   .Infor{
   left: 660px;
+  }
+  .Vena1{
+    display: none;
   }
  .Fast{
   left: 660px;
@@ -1055,5 +1423,790 @@ width: 100%; height: 890px; z-index: 3; position: absolute; top: -510px; opacity
 }
 .RoleM{
   position: relative; top: 30px;
+}
+.line6{
+  justify-content: center; z-index: 6; position: relative; opacity: 1; left: 40%; color: rgb(255, 60, 0); top: 70px;
+}
+/*@media screen and (min-width: 551px) and (max-width: 650px){
+  .Gallery1{
+    font-size: 28px;
+    left: 5%
+  }
+}*/
+@media screen and (max-width: 899px) and (min-width: 800px){
+  .Gallery1{
+    left: 0;
+    font-size: 28px;
+  }
+  .line6{
+    left: 35%
+  }
+}
+@media screen and (min-width: 550px) and (max-width: 800px){
+  .Gallery1{
+    font-size: 28px;
+    left: 5%
+  }
+}
+@media screen and (min-width: 901px){
+  .Gallery1{
+    font-size: 40px;
+  }
+  .line6{
+    left: 35%
+  }
+}
+@media screen and (max-width: 1100px){
+  .photo3{
+    position: relative;
+    top: 60px;
+    left: 25%;
+    bottom: 30px;
+  }
+  .row{
+    position: relative;
+    left: 6%;
+    bottom: 100px;
+  }
+  .col1{
+    position: absolute;
+    bottom: 560px;
+  }
+  .col2{
+    position: absolute;
+    bottom: 560px;
+    left: 10%;
+  }
+  .col3{
+    position: absolute;
+    bottom: 230px;
+    right: 52%
+  }
+
+  .col4{
+    display: none;  
+  }
+}
+@media screen and (max-width: 1000px) and (min-width: 990px){
+  .photo1{
+    width: 300px;
+    height: 220px;
+    left: 10%;
+    position: relative;
+  }
+  .photo2{
+    width: 300px;
+    height: 220px;
+
+  }
+  .photo3{
+    width: 300px;
+    height: 220px;
+    left: 28%;
+  }
+  .col1{
+    position: absolute;
+    bottom: 500px;
+    left: 2%
+  }
+  .col2{
+    position: absolute;
+    bottom: 500px;
+    left: 8%
+    }
+  .col3{
+    position: absolute;
+    bottom: 230px;
+    right: 51%
+  }
+}
+@media screen and (max-width: 989px) and (min-width: 900px){
+  .photo1{
+    width: 300px;
+    height: 220px;
+    right: 5%;
+    position: relative;
+  }
+  .photo2{
+    width: 300px;
+    height: 220px;
+    position: relative;
+    right: 5%;
+  }
+  .photo3{
+    width: 300px;
+    height: 220px;
+    left: 23%
+  }
+  .col1{
+    position: absolute;
+    bottom: 500px;
+    right: 6%
+  }
+  .col2{
+    position: absolute;
+    bottom: 500px;
+    left: -9%;
+    }
+  .col3{
+    position: absolute;
+    bottom: 230px;
+    right: 83%;
+  }
+}
+@media screen and (max-width: 899px) and (min-width: 800px){
+  .photo1{
+    width: 280px;
+    height: 200px;
+    right: 5%;
+    position: relative;
+  }
+  .photo2{
+    width: 280px;
+    height: 200px;
+  }
+  .photo3{
+    width: 280px;
+    height: 200px;
+    left: 25%
+  }
+  .col1{
+    position: absolute;
+    bottom: 480px;
+    right: 7%;
+  }
+  .col2{
+    position: absolute;
+    bottom: 480px;
+    left: -8%;
+    }
+  .col3{
+    position: absolute;
+    bottom: 230px;
+    right: 82%
+  }
+}
+@media screen and (max-width: 799px) and (min-width: 750px){
+  .Gallery1{
+    left: 0;
+  }
+  .line6{
+    left: 35%;
+  }
+  .photo1{
+    width: 240px;
+    height: 160px;
+    right: 10%;
+    position: relative;
+  }
+  .photo2{
+    width: 240px;
+    height: 160px;
+  }
+  .photo3{
+    width: 240px;
+    height: 160px;
+    left: 25%
+  }
+  .col1{
+    position: absolute;
+    bottom: 450px;
+    right: 12%;
+  }
+  .col2{
+    position: absolute;
+    bottom: 450px;
+    left: -11%;
+    }
+  .col3{
+    position: absolute;
+    bottom: 240px;
+    right: 85%
+  }
+}
+@media screen and (max-width: 749px) and (min-width: 700px){
+  .Gallery1{
+    left: 0;
+  }
+  .line6{
+    left: 35%;
+  }
+  .photo1{
+    width: 240px;
+    height: 160px;
+    right: 10%;
+    position: relative;
+  }
+  .photo2{
+    width: 240px;
+    height: 160px;
+  }
+  .photo3{
+    width: 240px;
+    height: 160px;
+    left: 25%
+  }
+  .col1{
+    position: absolute;
+    bottom: 450px;
+    right: 15%;
+  }
+  .col2{
+    position: absolute;
+    bottom: 450px;
+    left: -28%;
+    }
+  .col3{
+    position: absolute;
+    bottom: 240px;
+    right: 122%
+  }
+}
+@media screen and (max-width: 699px) and (min-width: 600px){
+  .Gallery1{
+    left: 0;
+    font-size: 28px;
+  }
+  .line6{
+    left: 35%;
+  }
+  .photo1{
+    width: 240px;
+    height: 160px;
+    right: 12%;
+    position: relative;
+  }
+  .photo2{
+    width: 240px;
+    height: 160px;
+    position: relative;
+    right: 6%;
+  }
+  .photo3{
+    width: 240px;
+    height: 160px;
+    left: 22%
+  }
+  .col1{
+    position: absolute;
+    bottom: 450px;
+    right: 16%;
+  }
+  .col2{
+    position: absolute;
+    bottom: 450px;
+    left: -30%;
+    }
+  .col3{
+    position: absolute;
+    bottom: 220px;
+    right: 125%
+  }
+}
+@media screen and (max-width: 599px) and (min-width: 500px){
+  .Gallery1{
+    left: 1%;
+    font-size: 28px;
+  }
+  .line6{
+    left: 36%;
+  }
+  .photo1{
+    width: 260px;
+    height: 180px;
+    right: 0;
+    left: 20%;
+    position: relative;
+    bottom: 10px;
+  }
+  .photo2{
+    width: 260px;
+    height: 180px;
+    position: relative;
+    right: 0;
+    left: 20%;
+    top: 50px;
+  }
+  .photo3{
+    width: 260px;
+    height: 180px;
+    left: 20%;
+    top: 100px;
+  }
+  .col1{
+    position: absolute;
+    bottom: 655px;
+    right: 0%;
+  }
+  .col2{
+    position: absolute;
+    bottom: 450px;
+    left: -89%;
+    }
+  .col3{
+    position: absolute;
+    bottom: 220px;
+    right: 177%
+  }
+.Most1{
+  display: none;
+}
+.Skver1{
+  display: none;
+}
+.Sad1{
+  display: none;
+}
+.Most3{
+display: block;
+font-family: "Montserrat";
+z-index: 30;
+position: absolute;
+bottom: 420px;
+left: 37%;
+}
+.Sad3{
+display: block;
+bottom: 180px;
+z-index: 30;
+font-family: "Montserrat";
+left: 39%;
+}
+.Skver3{
+display: block;
+z-index: 30; 
+position: absolute;
+top: 550px;
+left: 36%;
+font-family: "Montserrat";
+}
+.col5{
+  display: block;
+  z-index: 30;
+}
+}
+@media screen and (max-width: 399px) and (min-width: 350px){
+  .Gallery1{
+    left: 5%;
+    font-size: 28px;
+  }
+  .line6{
+    left: 38%;
+  }
+  .photo1{
+    width: 240px;
+    height: 160px;
+    right: 0;
+    left: 15%;
+    position: relative;
+    bottom: 40px;
+  }
+  .photo2{
+    width: 240px;
+    height: 160px;
+    position: relative;
+    right: 0;
+    left: 15%;
+    top: 10px;
+  }
+  .photo3{
+    width: 240px;
+    height: 160px;
+    left: 15%;
+    top: 70px;
+  }
+  .col1{
+    position: absolute;
+    bottom: 655px;
+    right: 0%;
+  }
+  .col2{
+    position: absolute;
+    bottom: 450px;
+    left: -89%;
+    }
+  .col3{
+    position: absolute;
+    bottom: 220px;
+    right: 177%
+  }
+.Most1{
+  display: none;
+}
+.Skver1{
+  display: none;
+}
+.Sad1{
+  display: none;
+}
+.Most3{
+display: block;
+font-family: "Montserrat";
+z-index: 30;
+position: absolute;
+left: 34%;
+bottom: 380px;
+}
+.Sad3{
+display: block;
+bottom: 170px;
+z-index: 30;
+font-family: "Montserrat";
+left: 36%;
+}
+.Skver3{
+display: block;
+z-index: 30; 
+position: absolute;
+left: 32%;
+top: 490px;
+font-family: "Montserrat";
+}
+}
+@media screen and (max-width: 499px) and (min-width: 450px){
+  .Gallery1{
+    left: 1%;
+    font-size: 28px;
+  }
+  .line6{
+    left: 36%;
+  }
+  .photo1{
+    width: 260px;
+    height: 180px;
+    right: 0;
+    left: 15%;
+    position: relative;
+    bottom: 10px;
+  }
+  .photo2{
+    width: 260px;
+    height: 180px;
+    position: relative;
+    right: 0;
+    left: 15%;
+    top: 50px;
+  }
+  .photo3{
+    width: 260px;
+    height: 180px;
+    left: 15%;
+    top: 100px;
+  }
+  .col1{
+    position: absolute;
+    bottom: 655px;
+    right: 0%;
+  }
+  .col2{
+    position: absolute;
+    bottom: 450px;
+    left: -89%;
+    }
+  .col3{
+    position: absolute;
+    bottom: 220px;
+    right: 177%
+  }
+.Most1{
+  display: none;
+}
+.Skver1{
+  display: none;
+}
+.Sad1{
+  display: none;
+}
+.Most3{
+display: block;
+font-family: "Montserrat";
+z-index: 30;
+position: absolute;
+bottom: 420px;
+left: 35%;
+}
+.Sad3{
+display: block;
+bottom: 180px;
+z-index: 30;
+font-family: "Montserrat";
+left: 37%;
+}
+.Skver3{
+display: block;
+z-index: 30; 
+position: absolute;
+top: 550px;
+left: 34%;
+font-family: "Montserrat";
+}
+.col5{
+  display: block;
+  z-index: 30;
+}
+}
+@media screen and (max-width: 449px) and (min-width: 400px){
+  .Gallery1{
+    left: 1%;
+    font-size: 28px;
+  }
+  .line6{
+    left: 36%;
+  }
+  .photo1{
+    width: 260px;
+    height: 180px;
+    right: 0;
+    left: 12%;
+    position: relative;
+    bottom: 10px;
+  }
+  .photo2{
+    width: 260px;
+    height: 180px;
+    position: relative;
+    right: 0;
+    left: 12%;
+    top: 50px;
+  }
+  .photo3{
+    width: 260px;
+    height: 180px;
+    left: 12%;
+    top: 100px;
+  }
+  .col1{
+    position: absolute;
+    bottom: 655px;
+    right: 0%;
+  }
+  .col2{
+    position: absolute;
+    bottom: 450px;
+    left: -89%;
+    }
+  .col3{
+    position: absolute;
+    bottom: 220px;
+    right: 177%
+  }
+.Most1{
+  display: none;
+}
+.Skver1{
+  display: none;
+}
+.Sad1{
+  display: none;
+}
+.Most3{
+display: block;
+font-family: "Montserrat";
+z-index: 30;
+position: absolute;
+bottom: 420px;
+left: 33%;
+}
+.Sad3{
+display: block;
+bottom: 180px;
+z-index: 30;
+font-family: "Montserrat";
+left: 35%;
+}
+.Skver3{
+display: block;
+z-index: 30; 
+position: absolute;
+top: 550px;
+left: 32%;
+font-family: "Montserrat";
+}
+.col5{
+  display: block;
+  z-index: 30;
+}
+}
+@media screen and (max-width: 399px) and (min-width: 350px){
+  .Gallery1{
+    left: 1%;
+    font-size: 28px;
+  }
+  .line6{
+    left: 36%;
+  }
+  .photo1{
+    width: 260px;
+    height: 180px;
+    right: 0;
+    left: 7%;
+    position: relative;
+    bottom: 10px;
+  }
+  .photo2{
+    width: 260px;
+    height: 180px;
+    position: relative;
+    right: 0;
+    left: 7%;
+    top: 50px;
+  }
+  .photo3{
+    width: 260px;
+    height: 180px;
+    left: 7%;
+    top: 100px;
+  }
+  .col1{
+    position: absolute;
+    bottom: 655px;
+    right: 0%;
+  }
+  .col2{
+    position: absolute;
+    bottom: 450px;
+    left: -89%;
+    }
+  .col3{
+    position: absolute;
+    bottom: 220px;
+    right: 177%
+  }
+.Most1{
+  display: none;
+}
+.Skver1{
+  display: none;
+}
+.Sad1{
+  display: none;
+}
+.Most3{
+display: block;
+font-family: "Montserrat";
+z-index: 30;
+position: absolute;
+bottom: 420px;
+left: 31%;
+}
+.Sad3{
+display: block;
+bottom: 180px;
+z-index: 30;
+font-family: "Montserrat";
+left: 33%;
+}
+.Skver3{
+display: block;
+z-index: 30; 
+position: absolute;
+top: 550px;
+left: 30%;
+font-family: "Montserrat";
+}
+.col5{
+  display: block;
+  z-index: 30;
+}
+}
+@media screen and (max-width: 349px) and (min-width: 300px){
+  .Gallery1{
+    left: 1%;
+    font-size: 28px;
+  }
+  .line6{
+    left: 36%;
+  }
+  .photo1{
+    width: 260px;
+    height: 180px;
+    right: 0;
+    left: 4%;
+    position: relative;
+    bottom: 10px;
+  }
+  .photo2{
+    width: 260px;
+    height: 180px;
+    position: relative;
+    right: 0;
+    left: 4%;
+    top: 50px;
+  }
+  .photo3{
+    width: 260px;
+    height: 180px;
+    left: 4%;
+    top: 100px;
+  }
+  .col1{
+    position: absolute;
+    bottom: 655px;
+    right: 0%;
+  }
+  .col2{
+    position: absolute;
+    bottom: 450px;
+    left: -89%;
+    }
+  .col3{
+    position: absolute;
+    bottom: 220px;
+    right: 177%
+  }
+.Most1{
+  display: none;
+}
+.Skver1{
+  display: none;
+}
+.Sad1{
+  display: none;
+}
+.Most3{
+display: block;
+font-family: "Montserrat";
+z-index: 30;
+position: absolute;
+bottom: 420px;
+left: 29%;
+}
+.Sad3{
+display: block;
+bottom: 180px;
+z-index: 30;
+font-family: "Montserrat";
+left: 31%;
+}
+.Skver3{
+display: block;
+z-index: 30; 
+position: absolute;
+top: 550px;
+left: 28%;
+font-family: "Montserrat";
+}
+.col5{
+  display: block;
+  z-index: 30;
+}
+}
+
+.Most3{
+  display: block;
+  color: black;
+  position: absolute;
+  z-index: -100;
+}
+.Skver3{
+  display: block;
+  position: absolute;
+  z-index: -100;
+}
+.Sad3{
+  position: absolute;
+  display: block;
+  z-index: -100;
+  font-family: 'Montserrat';
 }
 /*.wrapper{position:relative; max-width:100wv; overflow:hidden;}
