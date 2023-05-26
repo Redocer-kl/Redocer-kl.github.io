@@ -1,4 +1,4 @@
-
+﻿
 .video-container {
     background-attachment:fixed;
     bottom: 80px;
@@ -42,7 +42,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    background: rgba(black, .2);
+    background: rgba(white, .2);
     z-index: 1;
   }
   
